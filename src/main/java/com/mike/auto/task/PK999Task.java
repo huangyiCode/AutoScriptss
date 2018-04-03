@@ -10,7 +10,7 @@ public class PK999Task {
 
     private static final Print2D FRIEND_LIST_POINT = new Print2D(172, 1074);
 
-    private static final Print2D FRIEND_POINT = new Print2D(164, 1108);
+    private static final Print2D FRIEND_POINT = new Print2D(178, 1115);
 
     private static final Print2D PK_POINT = new Print2D(328, 1219);
 
@@ -39,7 +39,7 @@ public class PK999Task {
                 AppiumUtils.waitSecond(8);
                 System.out.println("-------跳过-------");
                 AppiumUtils.tap(driver, SKIP_POINT.getX(), SKIP_POINT.getY());
-                AppiumUtils.waitSecond(2);
+                AppiumUtils.waitSecond(5);
                 System.out.println("-------下一步-------");
                 AppiumUtils.tap(driver, BLOCK_POINT.getX(), BLOCK_POINT.getY());
                 AppiumUtils.waitSecond(5);
@@ -54,7 +54,5 @@ public class PK999Task {
         } finally {
             System.out.println("强制中断---->times=" + times);
         }
-
-
     }
 }

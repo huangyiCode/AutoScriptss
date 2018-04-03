@@ -24,6 +24,7 @@ public class GoToHomePagerTask {
      * 4.等待进入游戏主界面wait(10s)
      */
     public void goToHomePager(AndroidDriver driver) {
+        System.out.println("-------V1.0.1--------");
         AppiumUtils.waitSecond(20);
 //        AppiumUtils.tap(driver, CHOOSE_USER_POINT.getX(), CHOOSE_USER_POINT.getY());
 ////        System.out.println("-------忽略--------");
