@@ -40,6 +40,9 @@ public class GoToHomePagerTask {
 
         System.out.println("-------进入主界面-------");
 
+
+
+        System.out.println("-----");
         System.out.println("---" + driver.getPageSource() + "---");
     }
 

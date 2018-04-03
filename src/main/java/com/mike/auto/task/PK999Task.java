@@ -10,7 +10,7 @@ public class PK999Task {
 
     private static final Print2D FRIEND_LIST_POINT = new Print2D(172, 1074);
 
-    private static final Print2D FRIEND_POINT = new Print2D(190, 589);
+    private static final Print2D FRIEND_POINT = new Print2D(164, 1108);
 
     private static final Print2D PK_POINT = new Print2D(328, 1219);
 
