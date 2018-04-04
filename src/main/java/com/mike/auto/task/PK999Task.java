@@ -10,7 +10,7 @@ public class PK999Task {
 
     private static final Print2D FRIEND_LIST_POINT = new Print2D(172, 1074);
 
-    private static final Print2D FRIEND_POINT = new Print2D(178, 1115);
+    private static final Print2D FRIEND_POINT = new Print2D(174, 802);
 
     private static final Print2D PK_POINT = new Print2D(328, 1219);
 
@@ -29,8 +29,14 @@ public class PK999Task {
             AppiumUtils.tap(driver, FRIEND_LIST_POINT.getX(), FRIEND_LIST_POINT.getY());
             AppiumUtils.waitSecond(5);
 
+            for (int i = 0; i <0 ; i++) {
+                //500 1120   500 300
+                AppiumUtils.swipe(driver,500,1120,500,300);
+                AppiumUtils.waitSecond(1);
+            }
 
-            while (times < 200) {
+
+            while (times < 68) {
                 System.out.println("-------选择好友-------");
                 AppiumUtils.tap(driver, FRIEND_POINT.getX(), FRIEND_POINT.getY());
                 AppiumUtils.waitSecond(5);

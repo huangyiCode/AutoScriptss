@@ -59,7 +59,7 @@ public class AppiumUtils {
         int fromX = 0;
         int toX = 0;
         int fromY = 5 * driver.manage().window().getSize().height / 6;
-        int toY = -fromY;
+        int toY = driver.manage().window().getSize().height / 6;
         System.out.println("fromX: " + fromX + " fromY: " + fromY + " toX: " + toX + " toY: " + toY);
         swipe(driver, fromX, fromY, toX, toY);
     }
@@ -111,7 +111,7 @@ public class AppiumUtils {
 
     public static void waitSecond(long waitSeconds) {
         try {
-            Thread.sleep(waitSeconds*1000);
+            Thread.sleep(waitSeconds * 1000);
         } catch (Exception e) {
             System.out.println("Error: " + e.toString());
         }
